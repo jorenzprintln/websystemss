@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/user (1).png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <h1><span title="Web Systems">Personal Portfolio </span></h1>
+    <div class="buttons">
+        <button id="bioBtn">Biography</button><br>
+        <button id="hobBtn">Hobbies</button><br>
+        <button id="carBtn">Career</button>
+    </div>
+
+    <div class="container-bio" id="bioCont">
+        <h2 style="font-family: Poppins;">Personal Information</h2>
+        <img src="images/close.png" id="closeBtn" class="closeBtn">
+        <img src="images/IMG_20241005_201635_017.jpg" class="nawong">
+        <h4>Hello! I am <span style="color: #e17055">Jorenz Pablo</h4>
+            <div class="titles">
+                <p class="tab-links active-link" onclick="opentab('details')">Details</p>
+                <p class="tab-links" onclick="opentab('contacts')">Contacts</p>
+            </div>
+            <div class="tab-contents active-tab" id="details">
+                <ul>
+                    <li><span style="margin-right: 16%; color: #e17055;">Name</span><br><span style="margin-left: 5%;">Paul Jorenz C. Pablo</span></li>
+                    <li><span style="margin-right: 19%; color: #e17055;">Age</span><br><span style="margin-right: 22%;">19</span></li>
+                    <li><span style="margin-right: 13%; color: #e17055;">Address</span><br><span style="margin-left: 1%;">Babatngon, Leyte</span></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="contacts">
+                <ul>
+                    <li><span style="margin-right: 2.5%; color: #e17055;">Mobile Number</span><br><span style="margin-right: 5.5%;">09518290505</span></li>
+                    <li><span style="margin-right: 4%; color: #e17055;">Email Address</span><br><span style="margin-left: 8%;">jorenzlnu@gmail.com</span></li>
+                    <li><span style="margin-right: 6.5%; color: #e17055;">Social Media</span><br>
+                        <span style="margin-left: 1%; display: inline-block;" >
+                            <a href="https://www.facebook.com/jorenz.pablo004"><img src="images/facebook (1).png" title="Facebook" style="display: inline-block; margin-right: 52%; margin-top: 62%;"></a>
+                            <a href="https://www.instagram.com/jorenzpablo?igsh=MTdyM2o3MnhzaHVkNw=="><img src="images/instagram (1).png" title="Instagram" style="display: inline-block; margin-right: 45%; margin-top: 62%;"></a>
+                            <a href="https://www.linkedin.com/in/paul-jorenz-pablo-bb1b23332/?trk=public-profile-join-page"><img src="images/linkedin.png" title="LinkedIn" style="display: inline-block; margin-top: 62%; margin-right: 38%;"></a>
+                        </span></li>
+                </ul>
+            </div>
+    </div>
+    
+    <div class="container-hob" id="hobCont">
+        <h2 style="font-family: Poppins;">Hobbies</h2>
+        <img src="images/close.png" id="closeBtn1" class="closeBtn">
+    
+        <div class="picture-container">
+            <div class="picture-holder" id="holder1">
+                <img src="images/games.png" alt="Example 1" style="width: 170px; height: auto; border-radius: 10px;">
+                <p>I enjoy playing online games, immersing myself in exciting virtual worlds 
+                    while connecting with players worldwide. This hobby provides a thrilling escape and fosters teamwork and community.
+                </p>
+            </div>
+    
+            <div class="picture-holder" id="holder2">
+                <img src="images/basket.jpg" alt="Example 2" style="width: 170px; height: auto; border-radius: 10px;">
+                <p>I love playing basketball, as it allows me to stay active while enjoying the thrill of competition. This 
+                    hobby not only keeps me fit but also helps me build teamwork and camaraderie with fellow players.</p>
+            </div>
+    
+            <div class="picture-holder" id="holder3">
+                <img src="images/social media.jpg" alt="Example 3" style="width: 170px; height: auto; border-radius: 10px;">
+                <p>I enjoy using social media to connect with friends and stay updated on current trends. This hobby allows me to share my experiences and engage with a broader community.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="car-hob" id="carCont">
+        <h2 style="font-family: Poppins;">Career</h2>
+        <img src="images/close.png" id="closeBtn2" class="closeBtn">
+        
+        <div class="education-section" style="margin-top: 20px; font-family: Poppins;">
+            <h3 style="color: #e17055">Educational Attainment</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
+                    <strong>Elementary:</strong> Libas Elementary School, 2015 - 2016
+                </li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
+                    <strong>High School:</strong> Burauen National HighSchool, 2019 - 2020
+                </li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
+                    <strong>Senior High School:</strong> Pagsulhugon National HighSchool, 2021 - 2022
+                </li>
+            </ul>
+        </div>
+    
+        <div class="projects-section" style="margin-top: 20px; font-family: Poppins;">
+            <h3 style="color: #e17055">Done Projects</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
+                    <strong>Saint Paul's Appointment Booking System:</strong> <br>The Patient can Book Appointment to a specifc Department
+                </li>
+                <li style="padding: 10px 0; border-bottom: 1px solid #ddd;">
+                    <strong>Pet Adaptation System:</strong> <br>The Pet Adaptation System helps pet owners and adopters integrate pets into new environments with personalized resources and support.
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="web.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
